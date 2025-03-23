@@ -1299,8 +1299,10 @@
 		return
 
 	var/mob/living/carbon/human/exposed_human = exposed_mob
+	/* NOVA EDIT REMOVAL - Do people truly want to be made more purple?
 	exposed_human.set_facial_haircolor(color, update = FALSE)
 	exposed_human.set_haircolor(color, update = TRUE)
+    */ // NOVA REMOVAL END
 
 /datum/reagent/medicine/regen_jelly/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
 	. = ..()
